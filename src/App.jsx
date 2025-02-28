@@ -68,12 +68,12 @@ const App = () => {
             Opponent: {oponentChoice.icon}
           </p>
           <p
-            className={`text-2xl border-t text-neutral-900 border-b text-center border-opacity-30 my-2  border-white w-full font-bold py-4 ${
+            className={`text-2xl  text-center border-opacity-60 my-2   w-full font-bold py-4 ${
               result === "You Lose"
-                ? "text-red-500 font-bold"
+                ? "text-red-500 font-bold  border-t border-b border-red-500  "
                 : result === "You Won"
-                ? "text-green-500 font-bold"
-                : "text-yellow-500 font-bold"
+                ? "text-green-500 font-bold border-t border-b border-green-500"
+                : "text-yellow-500 font-bold border-t border-b border-yellow-500"
             } `}
           >
             {result}
